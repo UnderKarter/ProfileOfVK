@@ -16,18 +16,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Etk-XJ-vL1">
-                                <rect key="frame" x="20" y="94" width="100" height="100"/>
+                                <rect key="frame" x="10" y="94" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="If6-Op-D9f"/>
                                     <constraint firstAttribute="width" secondItem="Etk-XJ-vL1" secondAttribute="height" multiplier="1:1" id="ddj-gC-44M"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пётр Семёнов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJB-5f-IpM">
+                                <rect key="frame" x="120" y="104" width="141" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" red="0.90591543910000005" green="0.90572243929999996" blue="0.91372662780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Установить статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4s-lG-5zE">
+                                <rect key="frame" x="120" y="137" width="132" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.34057876469999998" green="0.49463248250000003" blue="0.76473516230000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="o6a-ie-vJ3">
+                                <rect key="frame" x="120" y="165" width="52" height="17.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E94-Hd-Kg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.47450977560000002" green="0.47450983520000001" blue="0.47450983520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-jF-tGt">
+                                        <rect key="frame" x="39.5" y="-1" width="12.5" height="19"/>
+                                        <color key="tintColor" red="0.74168425800000004" green="0.78687041999999996" blue="0.85098922249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17.5" id="CoM-9y-J4e"/>
+                                            <constraint firstAttribute="width" constant="12.5" id="kef-yc-8BQ"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Etk-XJ-vL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8jt-mM-kqZ"/>
-                            <constraint firstItem="Etk-XJ-vL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RTW-Uu-tAa"/>
+                            <constraint firstItem="F4s-lG-5zE" firstAttribute="top" secondItem="kJB-5f-IpM" secondAttribute="bottom" constant="10" id="AgW-Ig-fvb"/>
+                            <constraint firstItem="kJB-5f-IpM" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="Eec-BI-PCM"/>
+                            <constraint firstItem="Etk-XJ-vL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RTW-Uu-tAa"/>
+                            <constraint firstItem="kJB-5f-IpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="S84-dd-6ZG"/>
+                            <constraint firstItem="F4s-lG-5zE" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="SV2-da-eGZ"/>
+                            <constraint firstItem="o6a-ie-vJ3" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="YpI-6R-YUr"/>
+                            <constraint firstItem="o6a-ie-vJ3" firstAttribute="top" secondItem="F4s-lG-5zE" secondAttribute="bottom" constant="10" id="qPf-FZ-Kva"/>
                         </constraints>
                     </view>
                     <connections>
@@ -41,5 +79,6 @@
     </scenes>
     <resources>
         <image name="avatar" width="2000" height="1333"/>
+        <image name="iphone" catalog="system" width="108" height="128"/>
     </resources>
 </document>
