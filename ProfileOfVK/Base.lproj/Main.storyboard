@@ -144,11 +144,86 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-5H-kjy">
-                                <rect key="frame" x="10" y="330.5" width="394" height="1"/>
+                                <rect key="frame" x="15" y="330.5" width="384" height="1"/>
                                 <color key="backgroundColor" red="0.17260035870000001" green="0.17630562189999999" blue="0.1843148768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.14509806040000001" green="0.14509806040000001" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="vEB-lP-tfI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0p-6K-kTK">
+                                <rect key="frame" x="5" y="341.5" width="101.5" height="24.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" imagePadding="9" buttonSize="mini">
+                                    <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="medium"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Город: Москва">
+                                            <attributes>
+                                                <font key="NSFont" size="8" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.54122686389999997" green="0.54893559219999999" blue="0.55294185880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-UE-i87">
+                                <rect key="frame" x="5" y="371" width="130.5" height="24.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" imagePadding="9" buttonSize="mini">
+                                    <imageReference key="image" image="briefcase" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="medium"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Указать место работы">
+                                            <attributes>
+                                                <font key="NSFont" size="8" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F11-Vs-8g6">
+                                <rect key="frame" x="5" y="400.5" width="130.5" height="24.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" imagePadding="9" buttonSize="mini">
+                                    <imageReference key="image" image="personalhotspot" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="medium"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ссылка на профиль &gt;">
+                                            <attributes>
+                                                <font key="NSFont" size="8" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.31626224520000001" green="0.42898705599999998" blue="0.66277039049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-g2-nFk">
+                                <rect key="frame" x="5" y="430" width="141" height="24.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" imagePadding="9" buttonSize="mini">
+                                    <imageReference key="image" image="info.circle.fill" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="medium"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Подробная информация">
+                                            <attributes>
+                                                <font key="NSFont" size="8" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swa-S4-GVC">
+                                <rect key="frame" x="15" y="474.5" width="384" height="1"/>
+                                <color key="backgroundColor" red="0.17260035870000001" green="0.17630562189999999" blue="0.1843148768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.14509806040000001" green="0.14509806040000001" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="g3i-4G-Mms"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -156,22 +231,33 @@
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.4726253748" green="0.62322396040000005" blue="0.80002170800000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="eiy-g2-nFk" firstAttribute="top" secondItem="F11-Vs-8g6" secondAttribute="bottom" constant="5" id="2Hv-Fu-JEQ"/>
                             <constraint firstItem="XpA-5H-kjy" firstAttribute="top" secondItem="h3L-Yr-3bz" secondAttribute="bottom" constant="20" id="4XI-gZ-qgp"/>
                             <constraint firstItem="Etk-XJ-vL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8jt-mM-kqZ"/>
                             <constraint firstItem="F4s-lG-5zE" firstAttribute="top" secondItem="kJB-5f-IpM" secondAttribute="bottom" constant="10" id="AgW-Ig-fvb"/>
-                            <constraint firstItem="XpA-5H-kjy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CVP-dX-gDt"/>
+                            <constraint firstItem="F11-Vs-8g6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Bhm-wY-0Fk"/>
+                            <constraint firstItem="XpA-5H-kjy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="CVP-dX-gDt"/>
+                            <constraint firstItem="lX6-UE-i87" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="D6u-bS-ZRL"/>
                             <constraint firstItem="kJB-5f-IpM" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="Eec-BI-PCM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpA-5H-kjy" secondAttribute="trailing" constant="10" id="H1M-Ul-u8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpA-5H-kjy" secondAttribute="trailing" constant="15" id="H1M-Ul-u8t"/>
                             <constraint firstItem="Etk-XJ-vL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RTW-Uu-tAa"/>
+                            <constraint firstItem="m0p-6K-kTK" firstAttribute="top" secondItem="XpA-5H-kjy" secondAttribute="bottom" constant="10" id="Ri6-Fo-gHw"/>
                             <constraint firstItem="kJB-5f-IpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="S84-dd-6ZG"/>
                             <constraint firstItem="F4s-lG-5zE" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="SV2-da-eGZ"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="YpI-6R-YUr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h3L-Yr-3bz" secondAttribute="trailing" constant="10" id="aAs-yn-IAc"/>
+                            <constraint firstItem="swa-S4-GVC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="cTb-q2-Naq"/>
+                            <constraint firstAttribute="trailing" secondItem="swa-S4-GVC" secondAttribute="trailing" constant="15" id="da7-cy-bmP"/>
+                            <constraint firstItem="swa-S4-GVC" firstAttribute="top" secondItem="eiy-g2-nFk" secondAttribute="bottom" constant="20" id="h4O-2e-L5N"/>
                             <constraint firstItem="McX-ml-E00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hfP-eP-sHa"/>
                             <constraint firstItem="h3L-Yr-3bz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jHu-to-lwG"/>
+                            <constraint firstItem="m0p-6K-kTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="kYC-bO-mwd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="McX-ml-E00" secondAttribute="trailing" constant="10" id="p1V-sj-nGq"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="top" secondItem="F4s-lG-5zE" secondAttribute="bottom" constant="10" id="qPf-FZ-Kva"/>
                             <constraint firstItem="h3L-Yr-3bz" firstAttribute="top" secondItem="McX-ml-E00" secondAttribute="bottom" constant="15" id="rYq-Re-mbF"/>
+                            <constraint firstItem="eiy-g2-nFk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="sD8-Xb-1sv"/>
+                            <constraint firstItem="F11-Vs-8g6" firstAttribute="top" secondItem="lX6-UE-i87" secondAttribute="bottom" constant="5" id="wPk-Vf-YkY"/>
+                            <constraint firstItem="lX6-UE-i87" firstAttribute="top" secondItem="m0p-6K-kTK" secondAttribute="bottom" constant="5" id="xJN-kD-AWP"/>
                             <constraint firstItem="McX-ml-E00" firstAttribute="top" secondItem="Etk-XJ-vL1" secondAttribute="bottom" constant="12" id="zYV-LT-dxU"/>
                         </constraints>
                     </view>
@@ -187,9 +273,13 @@
     </scenes>
     <resources>
         <image name="avatar" width="2000" height="1333"/>
+        <image name="briefcase" catalog="system" width="128" height="105"/>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="iphone" catalog="system" width="108" height="128"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="personalhotspot" catalog="system" width="128" height="75"/>
         <image name="play.square" catalog="system" width="128" height="114"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
     </resources>
