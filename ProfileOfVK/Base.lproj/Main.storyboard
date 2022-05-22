@@ -14,13 +14,32 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Etk-XJ-vL1">
+                                <rect key="frame" x="20" y="94" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="If6-Op-D9f"/>
+                                    <constraint firstAttribute="width" secondItem="Etk-XJ-vL1" secondAttribute="height" multiplier="1:1" id="ddj-gC-44M"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Etk-XJ-vL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8jt-mM-kqZ"/>
+                            <constraint firstItem="Etk-XJ-vL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RTW-Uu-tAa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userAvatar" destination="Etk-XJ-vL1" id="mwf-oV-Q9R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="83"/>
+            <point key="canvasLocation" x="76.811594202898561" y="-44.196428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="2000" height="1333"/>
+    </resources>
 </document>
