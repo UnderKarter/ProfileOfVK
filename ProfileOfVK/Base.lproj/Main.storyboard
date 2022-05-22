@@ -54,6 +54,24 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McX-ml-E00">
+                                <rect key="frame" x="10" y="206" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.17260035870000001" green="0.17630562189999999" blue="0.1843148768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="KSV-z0-ksq"/>
+                                </constraints>
+                                <color key="tintColor" red="0.92161852119999998" green="0.92532819509999997" blue="0.93333452939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Редактировать">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -65,10 +83,14 @@
                             <constraint firstItem="kJB-5f-IpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="S84-dd-6ZG"/>
                             <constraint firstItem="F4s-lG-5zE" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="SV2-da-eGZ"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="YpI-6R-YUr"/>
+                            <constraint firstItem="McX-ml-E00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hfP-eP-sHa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="McX-ml-E00" secondAttribute="trailing" constant="10" id="p1V-sj-nGq"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="top" secondItem="F4s-lG-5zE" secondAttribute="bottom" constant="10" id="qPf-FZ-Kva"/>
+                            <constraint firstItem="McX-ml-E00" firstAttribute="top" secondItem="Etk-XJ-vL1" secondAttribute="bottom" constant="12" id="zYV-LT-dxU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="editButton" destination="McX-ml-E00" id="Yu9-ST-ZLM"/>
                         <outlet property="userAvatar" destination="Etk-XJ-vL1" id="mwf-oV-Q9R"/>
                     </connections>
                 </viewController>
