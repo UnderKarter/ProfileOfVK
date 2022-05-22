@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProfileOfVK" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -72,20 +73,105 @@
                                     </attributedString>
                                 </buttonConfiguration>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3L-Yr-3bz">
+                                <rect key="frame" x="10" y="261" width="394" height="49.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-7z-qLN">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="49.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="6" buttonSize="small">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Истории">
+                                                    <attributes>
+                                                        <font key="NSFont" size="8" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-Kw-Uzg">
+                                        <rect key="frame" x="98.5" y="0.0" width="98.5" height="49.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="6" buttonSize="small">
+                                            <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Запись">
+                                                    <attributes>
+                                                        <font key="NSFont" size="8" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK6-fy-Aqf">
+                                        <rect key="frame" x="197" y="0.0" width="98.5" height="49.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="6" buttonSize="small">
+                                            <imageReference key="image" image="person.crop.square" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Фото">
+                                                    <attributes>
+                                                        <font key="NSFont" size="8" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-S7-Z4m">
+                                        <rect key="frame" x="295.5" y="0.0" width="98.5" height="49.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="6" buttonSize="small">
+                                            <imageReference key="image" image="play.square" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Клипы">
+                                                    <attributes>
+                                                        <font key="NSFont" size="8" name="Helvetica-Bold"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-5H-kjy">
+                                <rect key="frame" x="10" y="330.5" width="394" height="1"/>
+                                <color key="backgroundColor" red="0.17260035870000001" green="0.17630562189999999" blue="0.1843148768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.14509806040000001" green="0.14509806040000001" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vEB-lP-tfI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.4726253748" green="0.62322396040000005" blue="0.80002170800000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="XpA-5H-kjy" firstAttribute="top" secondItem="h3L-Yr-3bz" secondAttribute="bottom" constant="20" id="4XI-gZ-qgp"/>
                             <constraint firstItem="Etk-XJ-vL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8jt-mM-kqZ"/>
                             <constraint firstItem="F4s-lG-5zE" firstAttribute="top" secondItem="kJB-5f-IpM" secondAttribute="bottom" constant="10" id="AgW-Ig-fvb"/>
+                            <constraint firstItem="XpA-5H-kjy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CVP-dX-gDt"/>
                             <constraint firstItem="kJB-5f-IpM" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="Eec-BI-PCM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpA-5H-kjy" secondAttribute="trailing" constant="10" id="H1M-Ul-u8t"/>
                             <constraint firstItem="Etk-XJ-vL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RTW-Uu-tAa"/>
                             <constraint firstItem="kJB-5f-IpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="S84-dd-6ZG"/>
                             <constraint firstItem="F4s-lG-5zE" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="SV2-da-eGZ"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="leading" secondItem="Etk-XJ-vL1" secondAttribute="trailing" constant="10" id="YpI-6R-YUr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h3L-Yr-3bz" secondAttribute="trailing" constant="10" id="aAs-yn-IAc"/>
                             <constraint firstItem="McX-ml-E00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hfP-eP-sHa"/>
+                            <constraint firstItem="h3L-Yr-3bz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jHu-to-lwG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="McX-ml-E00" secondAttribute="trailing" constant="10" id="p1V-sj-nGq"/>
                             <constraint firstItem="o6a-ie-vJ3" firstAttribute="top" secondItem="F4s-lG-5zE" secondAttribute="bottom" constant="10" id="qPf-FZ-Kva"/>
+                            <constraint firstItem="h3L-Yr-3bz" firstAttribute="top" secondItem="McX-ml-E00" secondAttribute="bottom" constant="15" id="rYq-Re-mbF"/>
                             <constraint firstItem="McX-ml-E00" firstAttribute="top" secondItem="Etk-XJ-vL1" secondAttribute="bottom" constant="12" id="zYV-LT-dxU"/>
                         </constraints>
                     </view>
@@ -101,6 +187,10 @@
     </scenes>
     <resources>
         <image name="avatar" width="2000" height="1333"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="iphone" catalog="system" width="108" height="128"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="play.square" catalog="system" width="128" height="114"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
     </resources>
 </document>
